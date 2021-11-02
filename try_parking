@@ -1,0 +1,92 @@
+# Written by Jing Wang for Program Design
+# try_parking is a Unix shell script.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_parking
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_parking
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+-1
+23
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Invalid input. Hours should be positive and minutes should be in range 0-60'
+echo '===================================================='
+./a.out <<-EndOfInput
+3
+73
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Invalid input. Hours should be positive and minutes should be in range 0-60'
+echo '===================================================='
+./a.out <<-EndOfInput
+1
+6
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Amount due ($): 2'
+echo '===================================================='
+./a.out <<-EndOfInput
+6
+34
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Amount due ($): 12'
+echo '===================================================='
+./a.out <<-EndOfInput
+0
+47
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Amount due ($): 1'
+echo '===================================================='
+./a.out <<-EndOfInput
+26
+28
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Amount due ($): 18'
+echo '===================================================='
+./a.out <<-EndOfInput
+50
+2
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Amount due ($): 29'
+echo '===================================================='
+./a.out <<-EndOfInput
+64
+38
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please enter hours parked:'
+echo 'Please enter minutes parked:'
+echo 'Amount due ($): 36'
+echo '===================================================='

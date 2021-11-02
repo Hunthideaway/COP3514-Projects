@@ -1,0 +1,43 @@
+# Written by Jing Wang for Program Design
+# try_signs is a Unix shell script that will be used to test project 1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_signs
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_signs
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the year: 0'
+echo 'Output: Invalid input.'
+echo '===================================================='
+./a.out <<-EndOfInput
+-197
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the year: -197'
+echo 'Output: Invalid input'
+echo '===================================================='
+./a.out <<-EndOfInput
+2018
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the year: 2018'
+echo 'The animal sign for 2018 is Dog'
+echo '===================================================='
+./a.out <<-EndOfInput
+1999
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the year: 1999'
+echo 'The animal sign for is Rabbit'
+echo '===================================================='

@@ -1,0 +1,91 @@
+# Author: Jing Wang, for IT Program Design
+# try_pneumonia is a Unix shell script that will be used to test project 7.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_pneumonia
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_pneumonia
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+pneumonia_Florida.csv
+EndOfInput
+#
+cat output.csv
+echo '===================================================='
+echo 'Expected output:'
+echo 'Ed Fraser Memorial Hospital,Macclenny,FL,3,13749,Average,Lower'
+echo 'Jay Hospital,Jay,FL,3,13792,Average,Lower'
+echo 'Sacred Heart Hospital On The Gulf,Port Saint Joe,FL,5,14070,Average,Lower'
+echo 'Healthmark Regional Medical Center,Defuniak Springs,FL,4,15004,Average,Lower'
+echo 'Jackson Hospital,Marianna,FL,3,15360,Average,Lower'
+echo 'Twin Cities Hospital,Niceville,FL,3,15850,Average,Lower'
+echo 'Sacred Heart Hospital On The Emerald Coast,Miramar Beach,FL,5,15897,Average,Lower'
+echo 'Baptist Medical Center - Nassau,Fernandina Beach,FL,4,15956,Average,Lower'
+echo 'Lower Keys Medical Center,Key West,FL,3,16054,Average,Average'
+echo 'West Kendall Baptist Hospital,Miami,FL,3,16210,Better,Lower'
+echo 'Memorial Hospital Miramar,Miramar,FL,4,16654,Average,Average'
+echo 'North Okaloosa Medical Center,Crestview,FL,4,16811,Average,Average'
+echo 'Memorial Hospital Of Tampa,Tampa,FL,4,16812,Average,Average'
+echo 'Baptist Hospital,Pensacola,FL,4,16917,Average,Average'
+echo 'Bartow Regional Medical Center,Bartow,FL,4,16992,Average,Average'
+echo 'Santa Rosa Medical Center,Milton,FL,3,16997,Average,Average'
+echo 'Jupiter Medical Center,Jupiter,FL,5,17001,Average,Average'
+echo 'Lake City Medical Center,Lake City,FL,3,17028,Average,Average'
+echo 'Cape Canaveral Hospital,Cocoa Beach,FL,4,17182,Average,Average'
+echo 'Lakewood Ranch Medical Center,Bradenton,FL,3,17199,Average,Average'
+echo 'Desoto Memorial Hospital,Arcadia,FL,3,17207,Average,Average'
+echo 'Palm Bay Hospital,Palm Bay,FL,4,17225,Average,Average'
+echo 'Gulf Breeze Hospital,Gulf Breeze,FL,5,17231,Better,Average'
+echo 'Naples Community Hospital,Naples,FL,4,17328,Average,Average'
+echo 'Florida Hospital Dade City,Dade City,FL,3,17382,Average,Average'
+echo 'Baptist Medical Center - Beaches,Jacksonville Beach,FL,4,17402,Better,Average'
+echo 'Memorial Hospital West,Pembroke Pines,FL,3,17518,Better,Average'
+echo 'Palm Beach Gardens Medical Center,Palm Beach Gardens,FL,3,17540,Average,Average'
+echo 'Cape Coral Hospital,Cape Coral,FL,3,17648,Average,Average'
+echo 'Viera Hospital,Melbourne,FL,5,17655,Average,Average'
+echo 'Morton Plant Hospital,Clearwater,FL,4,17685,Average,Average'
+echo 'Englewood Community Hospital,Englewood,FL,3,17698,Average,Average'
+echo 'Lee Memorial Hospital,Fort Myers,FL,3,17719,Average,Average'
+echo 'Shands Lake Shore Regional Medical Center,Lake City,FL,4,17744,Average,Average'
+echo 'Baptist Medical Center Jacksonville,Jacksonville,FL,4,17801,Better,Average'
+echo 'St Anthonys Hospital,Saint Petersburg,FL,3,17880,Better,Average'
+echo 'Sarasota Memorial Hospital,Sarasota,FL,5,17936,Average,Average'
+echo 'Poinciana Medical Center,Kissimmee,FL,3,17950,Average,Average'
+echo 'South Florida Baptist Hospital,Plant City,FL,3,17963,Average,Average'
+echo 'Palms Of Pasadena Hospital,Saint Petersburg,FL,3,18126,Average,Average'
+echo 'South Lake Hospital,Clermont,FL,4,18126,Average,Average'
+echo 'Mayo Clinic,Jacksonville,FL,4,18166,Average,Average'
+echo 'Memorial Regional Hospital,Hollywood,FL,3,18199,Average,Average'
+echo "St Vincent's Medical Center Southside,Jacksonville,FL,3,18252,Average,Average"
+echo 'Florida Hospital Waterman,Tavares,FL,3,18271,Average,Higher'
+echo 'St Vincents Medical Center - Clay County,Middleburg,FL,5,18283,Average,Average'
+echo 'Doctors Hospital,Coral Gables,FL,4,18318,Better,Average'
+echo 'Florida Hospital North Pinellas,Tarpon Springs,FL,3,18326,Average,Average'
+echo 'Coral Gables Hospital,Coral Gables,FL,3,18436,Average,Average'
+echo 'Holmes Regional Medical Center,Melbourne,FL,3,18445,Average,Higher'
+echo 'Florida Hospital Memorial Medical Center,Daytona Beach,FL,4,18448,Average,Higher'
+echo 'Broward Health Coral Springs,Coral Springs,FL,3,18506,Average,Average'
+echo 'Orlando Health Orlando Regional Medical Center,Orlando,FL,4,18533,Average,Higher'
+echo 'Florida Hospital Wauchula,Wauchula,FL,4,18592,Average,Average'
+echo 'Holy Cross Hospital,Fort Lauderdale,FL,4,18613,Average,Higher'
+echo 'Gulf Coast Medical Center Lee Mem Health System,Fort Myers,FL,3,18619,Average,Higher'
+echo "St Joseph's Hospital,Tampa,FL,5,18635,Average,Higher"
+echo 'West Florida Hospital,Pensacola,FL,3,18649,Average,Higher'
+echo 'Tampa Community Hospital,Tampa,FL,3,18663,Average,Average'
+echo 'Mease Dunedin Hospital,Dunedin,FL,4,18685,Average,Average'
+echo 'Shands Live Oak Regional Medical Center,Live Oak,FL,3,18805,Average,Average'
+echo 'Tallahassee Memorial Hospital,Tallahassee,FL,3,18816,Average,Higher'
+echo 'Bethesda Hospital East,Boynton Beach,FL,3,18925,Average,Higher'
+echo 'Florida Hospital Carrollwood,Tampa,FL,4,19058,Average,Average'
+echo 'Florida Hospital Zephyrhills,Zephyrhills,FL,4,19093,Average,Higher'
+echo 'Florida Hospital Wesley Chapel,Wesley Chapel,FL,4,19111,Average,Higher'
+echo 'Florida Hospital,Orlando,FL,3,19155,Better,Higher'
+echo 'Florida Hospital Heartland Medical Center,Sebring,FL,4,19187,Average,Higher'
+echo 'Doctors Hospital Of Sarasota,Sarasota,FL,4,19272,Average,Higher'
+echo 'Fawcett Memorial Hospital,Port Charlotte,FL,3,20028,Average,Higher'
+echo 'Morton Plant North Bay Hospital,New Port Richey,FL,4,20044,Average,Higher'
+echo 'Gulf Coast Regional Medical Center,Panama City,FL,3,20766,Average,Higher'
+echo '==============================================================================='
